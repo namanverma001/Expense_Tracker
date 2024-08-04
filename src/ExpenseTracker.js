@@ -50,12 +50,12 @@ const ExpenseTracker = () => {
         {expenses.map((expense) => (
           <li key={expense.id}>
             <span>{expense.title}</span>
-            <span>{expense.amount}</span>
+            <span>₹{expense.amount}</span>
             <button onClick={() => deleteExpense(expense.id)}>Delete</button>
           </li>
         ))}
       </ul>
-      <h3>Total Amount: {getTotalAmount()}</h3>
+      <h3>Total Amount: ₹{getTotalAmount()}</h3>
     </div>
   );
 };
